@@ -1,0 +1,20 @@
+@import '../../variables/breakpoints';
+
+@mixin iphone-Samsung-landscape-only {
+    @media only screen and (min-width: #{$breakpoint-landscape}) and (max-width: #{$breakpoint-tablet + 43px})
+    and (orientation: landscape) {
+        @content;       
+    }
+}
+@mixin iphone-Samsung-portrait-only {
+    @media only screen and (min-width: #{$breakpoint-landscape - 55px}) and (max-width: #{$breakpoint-tablet + 43px})
+    and (orientation: portrait) {
+        @content;       
+    }
+}
+@mixin mobile-landscape-only {
+    @media only screen and (min-width: #{$breakpoint-landscape}) and (max-width: #{$breakpoint-tablet + 127px})
+    and (orientation: landscape) {
+        @content;       
+    }
+}

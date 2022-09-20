@@ -1,0 +1,88 @@
+@import '../styles/mixins/media-queries/mobile.mixin';
+@import '../styles/mixins/media-queries/tablet-and-desktop.mixin';
+
+.page4 {
+    align-items: center;
+    align-content: center;
+    height: 130vh;
+    .page4Header {
+        width: 317px;
+        height: 45px;
+        margin: auto;
+        margin-top: 5%;
+        p {
+            font-size: 29px;
+            color: #2e266f;
+        }
+    }
+    .page4Text {
+        width: 705px;
+        height: 76px;
+        margin: auto;
+        margin-top: 1.5%;
+        p {
+            font-size: 16px;
+            color: #aeb2b4;
+            text-align: center;
+        }
+    }
+    .cardRow {
+        width: 64%;
+        margin: auto;
+        col { padding-bottom: 3rem; }
+        .col .comp {
+            width: 392px;
+            height: 443px;  
+            .cardImg {
+                height: 275px;
+            }
+            .card-body {
+                .card-header {
+                    background: none;
+                    padding: 0;
+                    border: none;
+                    margin-top: 3%;
+                    .name {
+                        min-width: 269px;
+                        max-width: 269px;
+                        height: 29px;
+                        font-size: 18px;
+                        color: #0c3653;
+                        margin-left: 1rem;
+                        font-weight: bold;
+                    }
+                    .price {
+                        font-size: 28px;
+                        color: #f98169;
+                        font-weight: bold;
+                        max-width: 110px;
+                        min-width: 110px;
+                        height: 43px;
+                        margin-bottom: 0px;
+                        margin-left: -2rem;
+                    }
+                }
+                .card-text {
+                    width: 328px;
+                    height: 59px;
+                    margin-left: 1rem;
+                    margin-top: 4%;
+                    font-size: 14px;
+                    color: #aeb2b4;
+                }
+            }
+        }
+    }
+}
+
+@include iphone-Samsung-portrait-only {
+    /* code for portrait */
+}
+
+@include iphone-Samsung-landscape-only {
+    /* code for landscape */
+}
+
+@include tablet-and-desktop {
+    /* code for tab-desktop */
+}

@@ -1,0 +1,143 @@
+@import '../styles/mixins/media-queries/mobile.mixin';
+@import '../styles/mixins/media-queries/tablet-and-desktop.mixin';
+
+.page2 {
+    height: 116vh;
+    .paraContainer {
+        margin-top: 62px;
+        align-items: center;
+        .coloredDiv {
+            margin-left: 10rem;
+            width: fit-content;
+            height: 103px;
+            background: #fe043c;
+        }
+        .paraOne {
+            font-size: 49px;
+            width: 574px;
+            letter-spacing: -1px;
+            color: #2e266f;
+            margin-left: 4rem;
+            height: 103px;
+            line-height: 52px;
+        }
+        .paraTwo {
+            font-size: 30px;
+            margin-left: -25rem;
+            color: #707070;
+            font-family: segoe ui;
+        }
+    }
+    .cardHolder {
+        margin-top: 154px;
+        .col .card{
+            height: 640px;
+            width: 637px;
+            .foodImg, .burgerImg {
+                max-width: 637px;
+                max-height: 640px;
+            }
+            .card-img-overlay {
+                height: 258px;
+                margin-top: auto;
+                background-color: rgba(255,0,62,0.6899999976158142) !important;
+                color: #ffffff;
+                .card-title {
+                    font-size: 53px;
+                    font-weight: bold;
+                    margin-top: 21px;
+                    margin-left: 51px;                
+                }
+                .card-text {
+                    margin-left: 51px;
+                    font-size: 17px;
+                }
+                .bookNow {
+                    display: inline-flex;
+                    margin-left: 42px;
+                    text-align: center;
+                    align-items: center;
+                    .locationDiv {
+                        display: inline-flex;
+                        .locationImg {
+                            width: 23px;
+                            height: 34px;
+                        }
+                        .locationCity {
+                            margin-left: 1.1rem;
+                            font-size: 16px;
+                        }
+                    }
+                    .goButton {
+                        background: #fffaf5;
+                        color: #e3345f;
+                        font-size: 21px;
+                        width: 195px;
+                        height: 67px;
+                        margin-left: 14rem;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .Col2 {
+            margin-left: -14%;
+        }
+        .Col3 {
+            width: fit-content;
+            margin: auto -11rem;
+            display: grid;
+            .seeMore {
+                width: 110px;
+                height: 60px;
+            }
+            .seeMoreBtn {
+                background: none;
+                color: #fe043c;
+                font-size: 29px;
+                border: none;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .card {
+        animation: wiggle 8s linear infinite;
+    }
+    
+    /* Keyframes */
+    @keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+    }
+}
+
+@include iphone-Samsung-portrait-only {
+    /* code for portrait */
+}
+
+@include iphone-Samsung-landscape-only {
+    /* code for landscape */
+}
+
+@include tablet-and-desktop {
+    /* code for tab-desktop */
+}

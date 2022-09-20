@@ -1,0 +1,104 @@
+@import '../styles/mixins/media-queries/mobile.mixin';
+@import '../styles/mixins/media-queries/tablet-and-desktop.mixin';
+
+.contentLeft {
+    height: 110vh;
+    background: #fe043c;
+    width: 27%;
+    z-index: -1;
+    position: relative;
+    margin-top: -100px;
+    float: right;
+} 
+.contentRight {
+    position: absolute;
+    display: inline-block;
+    height: 100vh;
+    margin-top: -81px;
+    width: 50%;
+    .locationDiv {
+        margin-top: 16%;
+        height: 88px;
+        width: 38%;
+        background: #fe043c;
+        color: #ffffff;
+        font-size: 31px;
+        border-bottom-right-radius: 47px;
+        border-top-right-radius: 47px;
+        display: inline-flex;
+        .locationImg {
+            margin-left: 4rem;
+            margin-top: 1rem;
+        }
+        .para {
+            margin-left: 1.5rem!important;;
+        }  
+    }
+    .heading {
+        color: #2e266f;
+        margin-top: 32%;
+        font-size: 72px;
+        font-weight: bold;
+        margin-left: 13%;
+        p {
+            font-family: 'Poppins', sans-serif !important;
+        }
+        .inputContainer {
+            margin-top: 38px;
+            .d-flex .search{
+                height: 99px;
+                font-size: 26px;
+                padding-left: 6%;
+                width: 78%;
+                box-shadow: inset 0 0 4px 4px whitesmoke;
+                background: #fff;
+                border: thin;
+            }
+            .d-flex .goButton {
+                margin-left: -26%;
+                width: 206px;
+                background: #fe043c;
+                border: none;
+                font-size: 26px;
+                margin-top: 9px;
+                margin-bottom: 9px;
+                border-top-left-radius: 25px;
+            }
+        }
+    }
+}
+.imageContanier {
+    width: fit-content;
+    margin-left: 48%;
+    position: absolute;
+    margin-top: 3rem;
+    .pataDiv {
+        width: 74%;
+        margin-left: 18%;
+        margin-top: -27%;
+        .pata {
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
+    .plateDiv {
+        width: 100%;
+        position: relative;
+        margin-top: -87%;
+        .plate {
+            max-width: 100%;
+        }
+    }
+}
+
+@include iphone-Samsung-portrait-only {
+    /* code for portrait */
+}
+
+@include iphone-Samsung-landscape-only {
+    /* code for landscape */
+}
+
+@include tablet-and-desktop {
+    /* code for tab-desktop */
+}
